@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Insomers</string>
+    <string name="app_logo">Logo Insomers</string>
+    <string name="get_started_title">Selamat datang di Insomers</string>
+    <string name="get_started_subtitle">Mari temukan cara untuk mengatasi insomnia Anda bersama Insomers.</string>
+    <string name="get_started">Mulai</string>
+    <string name="insomnia_title">Apa itu Insomnia?</string>
+    <string name="insomnia_content">
+        Insomnia adalah gangguan tidur yang menyebabkan penderitanya sulit tidur atau tidak cukup tidur, meskipun memiliki cukup waktu untuk melakukannya. Hal ini dapat menyebabkan rasa lelah sepanjang hari, kesulitan berkonsentrasi, dan dampak negatif pada kualitas hidup. Faktor penyebabnya meliputi stres, gangguan emosional, gaya hidup, dan kondisi medis tertentu.
+    </string>
+    <string name="sleep_guide">Aturan 1
+Tidur Hanya Saat Mengantuk, Bukan Sekadar Lelah
+
+Jangan buru-buru tidur sebelum benar-benar mengantuk. Rasa lelah atau kurang energi bukan berarti sudah siap tidur. Tunggu sampai terasa sulit untuk tetap terjaga, barulah pergi tidur.
+
+Dengan cara ini, tubuh akan lebih mudah membangun pola tidur yang baik dan membantu memutus kebiasaan mengasosiasikan tempat tidur dengan terjaga.
+
+Aturan 2
+Bangun di Jam yang Sama Setiap Hari
+
+Usahakan untuk bangun di waktu yang sama setiap hari, termasuk saat akhir pekan. Ini sangat penting untuk menjaga jam tidur tetap teratur.
+
+Bangun lebih siang dari biasanya, seperti di akhir pekan, dapat mengacaukan ritme tidur. Tidur tambahan setelah waktu bangun yang biasa biasanya kurang berkualitas dan bisa mempersulit tidur di malam berikutnya.
+
+Aturan 3
+Keluar dari Tempat Tidur Kalau Susah Tidur
+
+Jika sudah berbaring lebih dari 15 menit tetapi tetap tidak bisa tidur, sebaiknya bangun sejenak.
+
+Berada di tempat tidur dalam kondisi terjaga terlalu lama bisa menciptakan asosiasi negatif antara tempat tidur dan kesulitan tidur. Keluar dari tempat tidur sejenak dapat membantu memutus asosiasi ini, meskipun terasa berlawanan dengan intuisi.
+
+Aturan 4
+Gunakan Tempat Tidur Hanya untuk Tidur
+
+Hindari melakukan aktivitas lain seperti membaca, menonton, makan, belajar, atau menggunakan perangkat elektronik di tempat tidur. Aktivitas semacam itu bisa membuat pikiran mengasosiasikan tempat tidur dengan hal-hal selain tidur, sehingga sulit untuk tertidur.
+
+Aturan 5
+Hindari Tidur Siang yang Tidak Perlu
+
+Tidur di luar waktu malam bisa melemahkan dorongan tidur dan mengganggu ritme sirkadian tubuh. Namun, jika sangat mengantuk (bukan hanya lelah), tidur siang singkat selama 15–30 menit dapat dilakukan.
+
+Jika memutuskan untuk tidur siang, lakukan sekitar 7–9 jam setelah waktu bangun pagi, biasanya di sore hari. Usahakan untuk konsisten dalam waktu tidur siang ini dan batasi durasinya agar tidak terlalu lama.
+
+Aturan 6
+Ciptakan Rutinitas untuk Relaksasi Sebelum Tidur
+
+Luangkan waktu sebelum tidur untuk merilekskan pikiran dan tubuh. Rutinitas ini bisa berupa membaca buku, mendengarkan musik menenangkan, atau meditasi.
+
+Rutinitas yang konsisten setiap malam membantu tubuh dan pikiran mengenali waktu untuk beristirahat, sehingga tidur menjadi lebih mudah.
+
+Aturan 7
+Jangan Membebani Pikiran di Tempat Tidur
+
+Hindari memikirkan masalah besar, merencanakan sesuatu, atau khawatir saat berada di tempat tidur. Jika pikiran-pikiran ini muncul, jadwalkan waktu khusus di siang hari untuk menyelesaikannya.
+
+Dengan memberikan waktu khusus untuk memikirkan atau menyelesaikan masalah, pikiran-pikiran tersebut tidak akan terlalu mengganggu saat malam. Ingatlah, meskipun kehilangan tidur terasa tidak nyaman, tubuh mampu beradaptasi dan memulihkan diri di malam berikutnya.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

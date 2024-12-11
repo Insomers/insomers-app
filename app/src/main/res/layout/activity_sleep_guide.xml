@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sleep_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panduan Tidur Nyenyak"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_sleep_guide_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/gambar2"
+            android:contentDescription="Ilustrasi Panduan Tidur"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_rule_1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 1: Tidur Hanya Saat Mengantuk, Bukan Sekadar Lelah"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_1_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jangan buru-buru tidur sebelum benar-benar mengantuk. Rasa lelah atau kurang energi bukan berarti sudah siap tidur. Tunggu sampai terasa sulit untuk tetap terjaga, barulah pergi tidur. Dengan cara ini, tubuh akan lebih mudah membangun pola tidur yang baik dan membantu memutus kebiasaan mengasosiasikan tempat tidur dengan terjaga."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 2: Bangun di Jam yang Sama Setiap Hari"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_2_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usahakan untuk bangun di waktu yang sama setiap hari, termasuk saat akhir pekan. Ini sangat penting untuk menjaga jam tidur tetap teratur. Bangun lebih siang dari biasanya, seperti di akhir pekan, dapat mengacaukan ritme tidur. Tidur tambahan setelah waktu bangun yang biasa biasanya kurang berkualitas dan bisa mempersulit tidur di malam berikutnya."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 3: Keluar dari Tempat Tidur Kalau Susah Tidur"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_3_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jika sudah berbaring lebih dari 15 menit tetapi tetap tidak bisa tidur, sebaiknya bangun sejenak. Berada di tempat tidur dalam kondisi terjaga terlalu lama bisa menciptakan asosiasi negatif antara tempat tidur dan kesulitan tidur. Keluar dari tempat tidur sejenak dapat membantu memutus asosiasi ini, meskipun terasa berlawanan dengan intuisi."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 4: Gunakan Tempat Tidur Hanya untuk Tidur"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_4_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hindari melakukan aktivitas lain seperti membaca, menonton, makan, belajar, atau menggunakan perangkat elektronik di tempat tidur. Aktivitas semacam itu bisa membuat pikiran mengasosiasikan tempat tidur dengan hal-hal selain tidur, sehingga sulit untuk tertidur."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_5_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 5: Hindari Tidur Siang yang Tidak Perlu"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_5_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidur di luar waktu malam bisa melemahkan dorongan tidur dan mengganggu ritme sirkadian tubuh. Namun, jika sangat mengantuk (bukan hanya lelah), tidur siang singkat selama 15–30 menit dapat dilakukan. Jika memutuskan untuk tidur siang, lakukan sekitar 7–9 jam setelah waktu bangun pagi, biasanya di sore hari. Usahakan untuk konsisten dalam waktu tidur siang ini dan batasi durasinya agar tidak terlalu lama."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_6_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 6: Ciptakan Rutinitas untuk Relaksasi Sebelum Tidur"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_6_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luangkan waktu sebelum tidur untuk merilekskan pikiran dan tubuh. Rutinitas ini bisa berupa membaca buku, mendengarkan musik menenangkan, atau meditasi. Rutinitas yang konsisten setiap malam membantu tubuh dan pikiran mengenali waktu untuk beristirahat, sehingga tidur menjadi lebih mudah."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_7_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aturan 7: Jangan Membebani Pikiran di Tempat Tidur"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_rule_7_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hindari memikirkan masalah besar, merencanakan sesuatu, atau khawatir saat berada di tempat tidur. Jika pikiran-pikiran ini muncul, jadwalkan waktu khusus di siang hari untuk menyelesaikannya. Dengan memberikan waktu khusus untuk memikirkan atau menyelesaikan masalah, pikiran-pikiran tersebut tidak akan terlalu mengganggu saat malam. Ingatlah, meskipun kehilangan tidur terasa tidak nyaman, tubuh mampu beradaptasi dan memulihkan diri di malam berikutnya."
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

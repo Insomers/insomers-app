@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lapisan Gradien -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#243454"
+                android:endColor="#0a1d34"
+                android:type="linear" />
+            <corners android:radius="16dp" />
+            <stroke android:width="1dp" android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <!-- Gambar Bitmap -->
+    <item android:right="0dp" android:left="0dp" android:top="0dp" android:bottom="0dp">
+        <bitmap
+            android:src="@drawable/rules"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerInside" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/getstarted3"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insomers hadir untukmu"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayo mulai perjalanan tidur yang lebih baik. Kami siap membantu Anda!"
+        android:textSize="16sp"
+        android:textColor="#E0E0E0"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_button"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:text="Masuk"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>
+
