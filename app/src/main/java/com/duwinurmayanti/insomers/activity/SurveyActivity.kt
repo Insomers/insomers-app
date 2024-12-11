@@ -16,7 +16,7 @@ import java.nio.channels.FileChannel
 class SurveyActivity : AppCompatActivity() {
 
     private lateinit var tflite: Interpreter
-    private val answers = mutableListOf<Float>()
+    private val answers = MutableList(6) { 0f }
 
     private lateinit var radioGroupGender: RadioGroup
     private lateinit var radioFemale: RadioButton
@@ -43,17 +43,10 @@ class SurveyActivity : AppCompatActivity() {
         radioMale = findViewById(R.id.radio_male)
 
         radioGroupGender.setOnCheckedChangeListener { _, checkedId ->
-            if (answers.isNotEmpty()) {
-                answers[0] = when (checkedId) {
-                    R.id.radio_female -> 2f
-                    R.id.radio_male -> 1f
-                    else -> answers[0]
-                }
-            } else {
-                when (checkedId) {
-                    R.id.radio_female -> answers.add(2f)
-                    R.id.radio_male -> answers.add(1f)
-                }
+            answers[0] = when (checkedId) {
+                R.id.radio_female -> 2f
+                R.id.radio_male -> 1f
+                else -> 0f
             }
         }
 
@@ -64,32 +57,31 @@ class SurveyActivity : AppCompatActivity() {
         radioGroup5 = findViewById(R.id.radio_group5)
 
         val radioGroups = listOf(radioGroup1, radioGroup2, radioGroup3, radioGroup4, radioGroup5)
-        radioGroups.forEach { group ->
+        radioGroups.forEachIndexed { index, group ->
             group.setOnCheckedChangeListener { _, checkedId ->
-                var selectedScale: Float? = null
-
-                when (checkedId) {
-                    R.id.radio_11, R.id.radio_21, R.id.radio_31, R.id.radio_41, R.id.radio_51 -> selectedScale = 1f
-                    R.id.radio_12, R.id.radio_22, R.id.radio_32, R.id.radio_42, R.id.radio_52 -> selectedScale = 2f
-                    R.id.radio_13, R.id.radio_23, R.id.radio_33, R.id.radio_43, R.id.radio_53 -> selectedScale = 3f
-                    R.id.radio_14, R.id.radio_24, R.id.radio_34, R.id.radio_44, R.id.radio_54 -> selectedScale = 4f
-                    R.id.radio_15, R.id.radio_25, R.id.radio_35, R.id.radio_45, R.id.radio_55 -> selectedScale = 5f
-                    R.id.radio_16, R.id.radio_26, R.id.radio_36, R.id.radio_46, R.id.radio_56 -> selectedScale = 6f
-                    R.id.radio_17, R.id.radio_27, R.id.radio_37, R.id.radio_47, R.id.radio_57 -> selectedScale = 7f
-                    R.id.radio_18, R.id.radio_28, R.id.radio_38, R.id.radio_48, R.id.radio_58 -> selectedScale = 8f
-                    R.id.radio_19, R.id.radio_29, R.id.radio_39, R.id.radio_49, R.id.radio_59 -> selectedScale = 9f
-                    R.id.radio_10, R.id.radio_20, R.id.radio_30, R.id.radio_40, R.id.radio_50 -> selectedScale = 10f
+                val selectedScale = when (checkedId) {
+                    R.id.radio_11, R.id.radio_21, R.id.radio_31, R.id.radio_41, R.id.radio_51 -> 1f
+                    R.id.radio_12, R.id.radio_22, R.id.radio_32, R.id.radio_42, R.id.radio_52 -> 2f
+                    R.id.radio_13, R.id.radio_23, R.id.radio_33, R.id.radio_43, R.id.radio_53 -> 3f
+                    R.id.radio_14, R.id.radio_24, R.id.radio_34, R.id.radio_44, R.id.radio_54 -> 4f
+                    R.id.radio_15, R.id.radio_25, R.id.radio_35, R.id.radio_45, R.id.radio_55 -> 5f
+                    R.id.radio_16, R.id.radio_26, R.id.radio_36, R.id.radio_46, R.id.radio_56 -> 6f
+                    R.id.radio_17, R.id.radio_27, R.id.radio_37, R.id.radio_47, R.id.radio_57 -> 7f
+                    R.id.radio_18, R.id.radio_28, R.id.radio_38, R.id.radio_48, R.id.radio_58 -> 8f
+                    R.id.radio_19, R.id.radio_29, R.id.radio_39, R.id.radio_49, R.id.radio_59 -> 9f
+                    R.id.radio_10, R.id.radio_20, R.id.radio_30, R.id.radio_40, R.id.radio_50 -> 10f
+                    else -> 0f
                 }
 
-                selectedScale?.let {
-                    answers.add(it)
+                if (selectedScale != 0f) {
+                    answers[index + 1] = selectedScale
                 }
             }
         }
 
         val btnPredict: Button = findViewById(R.id.btn_predict)
         btnPredict.setOnClickListener {
-            if (answers.size != 6) {
+            if (answers.any { it == 0f }) {
                 Toast.makeText(this, "Pilih semua jawaban dulu!", Toast.LENGTH_SHORT).show()
             } else {
                 val prediction = predict(answers.toFloatArray())
@@ -99,7 +91,6 @@ class SurveyActivity : AppCompatActivity() {
             }
         }
     }
-
 
     private fun loadModelFile(modelPath: String): MappedByteBuffer {
         val assetFileDescriptor = assets.openFd(modelPath)
