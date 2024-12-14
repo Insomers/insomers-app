@@ -2,6 +2,8 @@ package com.duwinurmayanti.insomers.fragment
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +27,13 @@ class HomeFragment : Fragment() {
 
     private lateinit var tvDate: TextView
     private lateinit var tvTime: TextView
+    private val handler = Handler(Looper.getMainLooper())
+    private val fetchTimeRunnable = object : Runnable {
+        override fun run() {
+            fetchDateTime()
+            handler.postDelayed(this, 60000)
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,8 +69,14 @@ class HomeFragment : Fragment() {
         tvTime = view.findViewById(R.id.tvTime)
 
         fetchDateTime()
+        handler.post(fetchTimeRunnable)
 
         return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        handler.removeCallbacks(fetchTimeRunnable)
     }
 
     private fun fetchDateTime() {

@@ -13,11 +13,12 @@
         android:outlineSpotShadowColor="@color/design_default_color_secondary_variant"
         android:outlineAmbientShadowColor="@color/design_default_color_secondary_variant"/>
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_gradient"
+        android:background="@drawable/background_nav"
         app:menu="@menu/buttom_nav" />
 
 </LinearLayout>
