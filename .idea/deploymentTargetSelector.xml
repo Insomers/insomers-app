@@ -7,10 +7,17 @@
       </SelectionState>
       <SelectionState runConfigName="MainActivity">
         <option name="selectionMode" value="DROPDOWN" />
+<<<<<<< HEAD
         <DropdownSelection timestamp="2024-12-11T12:37:00.148926100Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="PhysicalDevice" identifier="serial=RR8N70541ET" />
+=======
+        <DropdownSelection timestamp="2024-12-12T08:00:34.630931300Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\USER\.android\avd\Pixel_6a_API_35.avd" />
+>>>>>>> bf787c8 (update file)
             </handle>
           </Target>
         </DropdownSelection>
